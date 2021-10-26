@@ -1,0 +1,103 @@
+html {
+    font-family:'SF Pro Display';
+}
+
+.navigation {
+    width: 98%;
+    padding:1%;
+    background-color:#198D9A;
+    color: white;
+}
+
+.inline-block-header{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 50% 25%;
+    height:60px;
+    justify-content: space-evenly;
+    grid-template-areas: "navheadlines logo socialheader";
+}
+
+.navheadlines {
+    display: flex;
+    grid-area: navheadlines;
+    align-items: top; 
+    margin-left: 25px;
+}
+
+.logo {
+    grid-area: logo;
+    text-align:center;
+}
+
+.socialheader {
+    grid-area: socialheader;
+    text-align: right;
+    margin-right: 35px;
+    padding: 3.5%;
+}
+
+.AboutContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "headshot AboutDescription";
+}
+
+.headshot {
+    grid-area: headshot;
+    float:left;
+    padding: 15%;
+}
+
+.AboutDescription {
+    grid-area: AboutDescription;
+    margin: 35px;
+    float: left;
+}
+
+footer {
+    background-color: #F2F2F2;
+    width: 98%;
+    padding:1%;
+}
+
+.inline-block-footer, .ul {
+    display:inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    vertical-align: top;
+    }
+
+.socialfooter {
+    vertical-align: top;
+    height: 25%;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #198D9A;
+    border: none;
+    padding:3%;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+.skillscontainer {
+    background-color:#DBDBDB;
+    display: flex;
+    flex-direction: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+.learnmore {
+    font-weight: bold;
+}
